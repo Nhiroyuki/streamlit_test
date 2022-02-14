@@ -1,5 +1,8 @@
 google-cloud-vision
-streamlit
-Pillow
-opencv-python-headless
+#streamlit
+#Pillow
+#opencv-python-headless
+opencv_python==4.5.1.48
+streamlit==0.78.0
+Pillow==8.2.0
 
