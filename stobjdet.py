@@ -9,15 +9,10 @@ from google.cloud import vision
 
 #Google Visionの準備
  
-#key.jsonのディレクトリー設定
-base_dir = r'/Users/NakazawaHiroyuki/MyPython/画像認識/物体認識_Discription'
-
 #Google cloud API 認証情報
-credential_path = base_dir + r'/key.json'
 
 #サービスアカウントキーへのパスを通す
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
-
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
 client = vision.ImageAnnotatorClient()
 
 #Streamlit ファイル読み込み
