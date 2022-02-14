@@ -2,9 +2,4 @@ google-cloud-vision==2.6.3
 streamlit
 Pillow
 opencv-python-headless
-opencv-python==4.4.0.44
 opencv-contrib-python
-libsm6
-libxrender1
-libfontconfig1
-libice6
