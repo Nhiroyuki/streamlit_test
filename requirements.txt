@@ -4,4 +4,5 @@ Pillow
 opencv-python-headless
 opencv-python==4.4.0.44
 opencv-contrib-python
-apt-get install -y libgl1-mesa-dev
+apt-get
+-y libgl1-mesa-dev
