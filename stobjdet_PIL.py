@@ -17,10 +17,10 @@ from google.cloud import vision
 #Google Visionの準備
  
 #key.jsonのディレクトリー設定
-base_dir = r'/Users/NakazawaHiroyuki/MyPython/画像認識/物体認識_Discription'
+#base_dir = r'/Users/NakazawaHiroyuki/MyPython/画像認識/物体認識_Discription'
 
 #Google cloud API 認証情報
-credential_path = base_dir + r'/key.json'
+credential_path = 'key.json'
 
 #サービスアカウントキーへのパスを通す
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
