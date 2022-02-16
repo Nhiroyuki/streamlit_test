@@ -17,10 +17,10 @@ from google.cloud import vision
 #Google Visionの準備
  
 #key.jsonのディレクトリー設定
-#base_dir = r'/Users/NakazawaHiroyuki/MyPython/画像認識/物体認識_Discription'
+base_dir = r'/Users/NakazawaHiroyuki/MyPython/画像認識/物体認識_Discription'
 
 #Google cloud API 認証情報
-credential_path = 'key.json'
+credential_path = base_dir + r'/key.json'
 
 #サービスアカウントキーへのパスを通す
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
@@ -91,9 +91,12 @@ if uploaded_file is not None:
             d = ImageDraw.Draw(img)
             
             #矩形の登録
-            d.rectangle([(x1,y1),(x2,y2)],outline='green', width=3)
+            d.rectangle([(x1,y1),(x2,y2)],outline='red', width=5)
             #物体名と確信度の表示
-            d.text((x1+5, int((y1+y2)/2)),object_.name,fill='red',spacing=3, align='right')
+            font_path='/Users/NakazawaHiroyuki/MyPython/Font/Kyokasho.ttc'
+            font_size=35
+            font = ImageFont.truetype(font_path,font_size)
+            d.text((x1+5, int(y1+5)),object_.name,font=font,fill='red')
             
             
             
