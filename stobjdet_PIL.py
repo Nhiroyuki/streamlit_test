@@ -93,7 +93,7 @@ if uploaded_file is not None:
             #矩形の登録
             d.rectangle([(x1,y1),(x2,y2)],outline='red', width=5)
             #物体名と確信度の表示
-            font_path='/Users/NakazawaHiroyuki/MyPython/Font/Kyokasho.ttc'
+            font_path='Kyokasho.ttc'
             font_size=35
             font = ImageFont.truetype(font_path,font_size)
             d.text((x1+5, int(y1+5)),object_.name,font=font,fill='red')
